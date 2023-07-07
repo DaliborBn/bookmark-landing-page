@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+$blue: hsl(231, 69%, 60%);
+$red: hsl(0, 94%, 66%);
+$gray-blue: hsl(229, 8%, 60%);
+$dark-blue: hsl(229, 31%, 21%);
+
+$rubik: 'Rubik', sans-serif;
+
+$paragraph-margin-bottom: 0;
+$headings-margin-bottom: 0;
+$card-border-color: none;
+$accordion-border-width: 2px;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: $rubik;
+  background-color: $white;
+}
+h2 {
+  color: $dark-blue;
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.5rem;
+  margin: 2.2rem 0;
+  color: $gray-blue;
+}
+.my-btn {
+  font-size: 1.5rem;
+  padding: 1rem 1.2rem;
+}
+.btn, .nav-link {
+  transition: all 0.2s ease;
+}
+.m-top {
+  margin-top: 12rem;
+}
+.main-padding {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.container, .container-fluid,
+.container-sm, .container-md,
+.container-lg, .container-xl,
+.container-xxl {
+  --bs-gutter-x: 0;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+.offcanvas-body .btn-close:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.accordion {
+  width: 100%;
+  --bs-accordion-btn-focus-box-shadow: 0;
+  --bs-accordion-btn-icon: url("img/icon-arrow.svg");
+  --bs-accordion-active-color: #252b46;
+  --bs-accordion-active-bg: #ffffff;
+  --bs-accordion-btn-active-icon: url("img/icon-arrow-active.svg");
+}
+.accordion-flush .accordion-item:first-child {
+  border-top: 2px solid #dee2e6;
+}
+.accordion-flush .accordion-item:last-child {
+  border-bottom: 2px solid #dee2e6;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
